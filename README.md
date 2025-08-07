@@ -10,14 +10,13 @@ A sleek, responsive movie discovery application built with React.js and Vite. Di
 3. [Tech Stack](#-tech-stack)  
 4. [Getting Started](#-getting-started)  
    - [Prerequisites](#prerequisites)  
-   - [Installation](#installation)  
-   - [Environment Variables](#environment-variables)  
+   - [Installation](#installation)   
 5. [Usage](#-usage)  
 6. [Folder Structure](#-folder-structure)  
 7. [Deployment](#-deployment)  
 8. [Contributing](#-contributing)  
-9. [License](#-license)  
-10. [Contact](#-contact)  
+
+
 
 ---
 
@@ -59,13 +58,17 @@ A sleek, responsive movie discovery application built with React.js and Vite. Di
    git clone https://github.com/yourusername/movies-hub.git
    cd movies-hub
 ### Install dependencies
+ ```bash
 npm install
 # or
 yarn install
+ ```
 ### Start development server
+ ```bash
 npm run dev
 # or
 yarn dev
+ ```
 ### 🎮 Usage
 1.Home Page: View trending and popular movies.
 
@@ -76,5 +79,41 @@ yarn dev
 4.Favorites Page: Access your liked movies from the navigation.
 
 5.Details: Click a movie poster to view details (if implemented).
-## Folder Structure
+## Folder Structure🗂️ 
+ ```bash
+movies-hub/
+├── public/           # Static assets
+├── src/
+│   ├── assets/       # Images, icons, styles
+│   ├── components/   # Reusable UI components
+│   ├── context/      # React Context for state management
+│   ├── pages/        # Route-based pages (Home, Favorites)
+│   ├── services/     # API calls (TMDB)
+│   ├── App.jsx       # Entry point
+│   └── main.jsx      # Vite bootstrap
+├── .env              # Environment variables
+├── vite.config.js    # Vite configuration
+├── package.json      # Dependencies & scripts
+└── README.md         # Project documentation
+ ```
+## 🚢 Deployment
+This project is deployed on Netlify. To configure deployment:
+
+1.Connect your GitHub repository in Netlify.
+
+2.Set the build command to npm run build (or yarn build).
+
+3.Set the publish directory to dist.
+
+4.Add the environment variable VITE_TMDB_API_KEY in Netlify settings.
+## 🤝 Contributing
+1.Fork the repository.
+
+2.Create a new branch: git checkout -b feature/YourFeature
+
+3.Commit your changes: git commit -m "Add some feature"
+
+4.Push to the branch: git push origin feature/YourFeature
+
+5.Open a Pull Request.
 
