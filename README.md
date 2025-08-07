@@ -58,4 +58,23 @@ A sleek, responsive movie discovery application built with React.js and Vite. Di
    ```bash
    git clone https://github.com/yourusername/movies-hub.git
    cd movies-hub
+### Install dependencies
+npm install
+# or
+yarn install
+### Start development server
+npm run dev
+# or
+yarn dev
+### 🎮 Usage
+1.Home Page: View trending and popular movies.
+
+2.Search: Enter keywords to search for movies.
+
+3.Like: Click the heart icon to like a movie.
+
+4.Favorites Page: Access your liked movies from the navigation.
+
+5.Details: Click a movie poster to view details (if implemented).
+## Folder Structure
 
